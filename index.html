@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+	integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+	integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+	crossorigin="anonymous" />
+
+</head>
+
+<body>
+
+	<h1 class="text-center"> <i class="fas fa-film"></i> The open movie database</h1>
+	<h3 class="text-center">
+		Svi podaci o vasim omiljenim filmovima i serijama na jednom mjestu!
+	</h3>
+	<div class="text-center">
+		<input id="naslov" type="text" name="pretraga" placeholder="Unesite kriterijum pretrage...">
+		<select id="tip">
+			<option value="">Odaberite tip</option>
+			<option value="movie">Filmovi</option>
+			<option value="series">Serije</option>
+		</select>
+		<input id="godina" type="number" name="godina" placeholder="Godina">
+		<button onclick="searchadvide()"><i class="fas fa-search"></i>Pretraga</button>
+	</div>
+	<div class="container text-center">
+		<div class="row justify-content-center">
+			<div class="col-auto">
+				<p id="target"></p >
+				<div >
+					<div class="row">
+						<div class="col-xs-6">
+							<img id="picture">
+						</div>
+						<div class="col-xs-6">
+							<table class="table">
+
+								<tbody id="grade">
+									<tr>
+										<td>
+											<p>Naslov:</p>
+										</td>
+										<td>
+											<p id="title"></p>
+										</td>
+									</tr>
+									<tr>
+										<td>    
+											<p>Datum objavljivanja:</p>
+										</td>
+										<td>
+											<p id="date"></p>
+										</td>
+									</tr>
+									<tr>
+										<td>    
+											<p>Reziser:</p>
+										</td>
+										<td>
+											<p id="director"></p>
+										</td>
+									</tr>
+									<tr>
+										<td>    
+											<p>Radnja:</p>
+										</td>
+										<td>
+											<p id="plot"></p>
+										</td>
+									</tr>
+									<tr>
+										<td>    
+											<p>Godina:</p>
+										</td>
+										<td>
+											<p id="year"></p>
+										</td>
+									</tr>
+									<tr>
+										<td>    
+											<p>Trajanje:</p>
+										</td>
+										<td>
+											<p id="lenght"></p>
+										</td>
+									</tr>
+									<tr>
+										<td>    
+											<p>Glumci:</p>
+										</td>
+										<td>
+											<p id="actors"></p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p id="seasons-head">Broj sezona:</p>
+										</td>
+										<td>
+											<p id="seasons"></p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+
+		</div>
+	</div>
+
+	<script src="app.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+	integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+	crossorigin="anonymous"></script>
+
+</body>
+
+</html>
